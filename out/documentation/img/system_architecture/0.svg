@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="558px" preserveAspectRatio="none" style="width:1479px;height:558px;background:#FFFFFF;" version="1.1" viewBox="0 0 1479 558" width="1479px" zoomAndPan="magnify"><defs><filter height="300%" id="fawhmkk788pqk" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[75e0362c7ad5f090bee621ec63adae20]
+cluster Ядро--><polygon fill="#FFFFFF" filter="url(#fawhmkk788pqk)" points="361,6,409,6,416,28.2969,860,28.2969,860,551,361,551,361,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="361" x2="416" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="42" x="365" y="20.9951">Ядро</text><!--MD5=[020fa0a59afe89b9546757930c6bb592]
+cluster Данные--><polygon fill="#FFFFFF" filter="url(#fawhmkk788pqk)" points="16,230,86,230,93,252.2969,337,252.2969,337,327,16,327,16,230" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="93" y1="252.2969" y2="252.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="20" y="244.9951">Данные</text><!--MD5=[cc9936160c93a2ab7a33d7ef457c5e14]
+cluster Интерфейсы--><polygon fill="#FFFFFF" filter="url(#fawhmkk788pqk)" points="884,230,996,230,1003,252.2969,1462,252.2969,1462,327,884,327,884,230" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="884" x2="1003" y1="252.2969" y2="252.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="106" x="888" y="244.9951">Интерфейсы</text><!--MD5=[735d0a6200122372155dce51b2d5f5fc]
+entity IO--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="201" x="590.5" y="489"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="771.5" y="494"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="769.5" y="496"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="769.5" y="500"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="605.5" y="521.9951">Модуль ввода-вывода</text><!--MD5=[b643aff2f6de854ee098fa19746d9d7e]
+entity MOD--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="257" x="483.5" y="265"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="720.5" y="270"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="718.5" y="272"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="718.5" y="276"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="498.5" y="297.9951">Модуль объяснения решения</text><!--MD5=[c1cf4816c9fc16c41cf4bcfea89dd501]
+entity MPR--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="239" x="376.5" y="41"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="595.5" y="46"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="48"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="391.5" y="73.9951">Модуль принятия решения</text><!--MD5=[2a66f758bc1e9ddc7a4b4595260c358b]
+entity MTR--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="193" x="650.5" y="41"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="823.5" y="46"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="821.5" y="48"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="821.5" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="665.5" y="73.9951">Модуль трассировки</text><!--MD5=[3e355c6198dcadb7a74e29b3e665c144]
+entity RTR--><ellipse cx="785" cy="288" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="697" y="317.9951">Результаты трассировк</text><!--MD5=[ced9eb15bf51c5ac5580ef2b3ad5edff]
+entity IFN--><ellipse cx="434" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="386.5" y="429.9951">Информация</text><!--MD5=[2026dd637f92008547ce962dddba3856]
+entity SOL--><ellipse cx="612" cy="176" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="578.5" y="205.9951">Решение</text><!--MD5=[1a416c3156d55d9446032ebbee093b81]
+entity DS--><ellipse cx="639" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="532" y="429.9951">Детализированное решение</text><!--MD5=[c97c613dbfcfa94bb180f2ce6d0b4cfd]
+entity BD--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="132" x="189" y="265"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="301" y="270"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="299" y="272"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="299" y="276"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="204" y="297.9951">База данных</text><!--MD5=[57754efad49d3e25c8637c541f240281]
+entity BZ--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="122" x="32" y="265"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="134" y="270"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="132" y="272"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="132" y="276"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="47" y="297.9951">Баа знаний</text><!--MD5=[c42ed81cef7fdd2e33758127945b9a5b]
+entity UI--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="313" x="900.5" y="265"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1193.5" y="270"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1191.5" y="272"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1191.5" y="276"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="915.5" y="297.9951">Интерфейс конечного пользователя</text><!--MD5=[36c179afd0391342d2ea187b096c7f2d]
+entity EI--><rect fill="#FEFECE" filter="url(#fawhmkk788pqk)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="197" x="1248.5" y="265"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1425.5" y="270"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1423.5" y="272"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1423.5" y="276"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="1263.5" y="297.9951">Интерфейс эксперта</text><!--MD5=[0ecd579b94b5f51ba0c6012111a3b28f]
+entity Data--><ellipse cx="281" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="252" y="429.9951">Данные</text><!--MD5=[ace80cf5030f2c28e0de1134af984c25]
+entity ZN--><ellipse cx="160" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="134" y="429.9951">Знания</text><!--MD5=[e6536082f30f4ed71443f9825ee26c57]
+entity ZID--><ellipse cx="1306" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="1239" y="429.9951">Знания и данныее</text><!--MD5=[2c9985a0ab956a66d0e292bf74ba49e9]
+entity RRS--><ellipse cx="1057" cy="176" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="945.5" y="205.9951">Резулльтаты работы системы</text><!--MD5=[d9d5fba097e8af09df84b7ca054a3b69]
+entity ZES--><ellipse cx="1037" cy="400" fill="#FEFECE" filter="url(#fawhmkk788pqk)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="926.5" y="429.9951">Запрос к экспертной системе</text><!--MD5=[c34d794a416d03e1a2f38c76945cf9ec]
+link BD to Data--><path d="M261.46,316.33 C266.67,338.38 273.78,368.43 277.83,385.57 " fill="none" id="BD-Data" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="279.07,390.86,280.9086,381.1843,277.928,385.9922,273.1201,383.0115,279.07,390.86" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="260.26,311.26,258.4546,320.942,261.4187,316.1239,266.2368,319.088,260.26,311.26" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[95b204e22dcf1b80b4c216677087d7df]
+link Data to IO--><path d="M295.23,406.43 C311.13,412.39 337.69,422.04 361,429 C435.98,451.38 521.78,472.57 587.1,487.8 " fill="none" id="Data-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="592.16,488.98,584.3115,483.0301,587.2922,487.838,582.4843,490.8186,592.16,488.98" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="290.27,404.56,297.2855,411.4725,294.9499,406.3203,300.102,403.9847,290.27,404.56" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[edf95f199568abb790014400812c712b]
+link BZ to ZN--><path d="M109.28,315.72 C122.95,338.18 141.9,369.28 152.33,386.41 " fill="none" id="BZ-ZN" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="155.04,390.86,153.7535,381.0955,152.4299,386.5954,146.93,385.2717,155.04,390.86" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="106.56,311.26,107.8227,321.0276,109.1597,315.531,114.6563,316.868,106.56,311.26" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[24773e69eafc940b5ca278a1b508e8a4]
+link ZN to IO--><path d="M173.85,407.85 C187.18,414.19 208.04,423.44 227,429 C347.49,464.35 490.32,486.79 585.37,499.09 " fill="none" id="ZN-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="590.42,499.74,582.0092,494.6158,585.4615,499.097,580.9803,502.5493,590.42,499.74" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="169.3,405.66,175.6673,413.1738,173.8031,407.8329,179.144,405.9688,169.3,405.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[63422bd4f1a22dadd40eece5c416a238]
+link IO to RRS--><path d="M723.88,488.89 C744.34,473.86 770.08,452.49 788,429 C849.5,348.37 806.14,286.98 884,222 C931.75,182.15 1010.76,177.11 1042.82,176.81 " fill="none" id="IO-to-RRS" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1047.9,176.79,1038.8886,172.8157,1042.9,176.8043,1038.9115,180.8157,1047.9,176.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b10c301cc92edd845f37324e6bbbcaf4]
+link RRS to UI--><path d="M1057,185.27 C1057,200.85 1057,235.18 1057,259.65 " fill="none" id="RRS-to-UI" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1057,264.71,1061,255.71,1057,259.71,1053,255.71,1057,264.71" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8b085730c4e4ad656b321653d199beb2]
+link RRS to EI--><path d="M1066.32,178.54 C1092.81,183.08 1170.49,197.7 1231,222 C1258.11,232.89 1286.77,248.9 1308.82,262.3 " fill="none" id="RRS-to-EI" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1313.14,264.95,1307.532,256.8537,1308.869,262.3503,1303.3724,263.6873,1313.14,264.95" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d686066a3a9e43e4c8a3e8f2b2033626]
+link EI to ZID--><path d="M1338.7,311.26 C1330.32,333.75 1317.65,367.74 1310.8,386.11 " fill="none" id="EI-to-ZID" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1309.04,390.86,1315.9266,383.8191,1310.7831,386.1737,1308.4285,381.0301,1309.04,390.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6666ab4e2614e04af788e47f419e73cd]
+link ZID to IO--><path d="M1296.99,403.02 C1275.56,407.81 1219.82,420.09 1173,429 C1043.97,453.55 894.83,478.38 797.03,494.18 " fill="none" id="ZID-to-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="791.83,495.02,801.3546,497.5263,796.7654,494.2189,800.0728,489.6297,791.83,495.02" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[459d2f6e080d3c51e1c02eee6dd90eda]
+link UI to ZES--><path d="M1052.95,311.26 C1048.9,333.56 1042.79,367.16 1039.43,385.64 " fill="none" id="UI-to-ZES" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1038.48,390.86,1044.0317,382.725,1039.3782,385.9413,1036.1618,381.2879,1038.48,390.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c1a08a95523848d58e26af5a30ce13ca]
+link ZES to IO--><path d="M1027.75,403.94 C990.93,415.64 852.67,459.6 765.16,487.42 " fill="none" id="ZES-to-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="760.25,488.98,770.0383,490.0701,765.0158,487.4675,767.6184,482.4449,760.25,488.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d89910253f5356d170802c7ae62dc055]
+link MTR to RTR--><path d="M750.78,87.1 C758.62,132.88 776.43,236.9 782.73,273.76 " fill="none" id="MTR-to-RTR" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="783.58,278.69,786.0057,269.1445,782.7372,273.7615,778.1201,270.4931,783.58,278.69" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[16d55ee97e95cb1328e1b663c9130ff4]
+link RTR to IO--><path d="M786.06,297.07 C788.62,319.32 793.44,382.98 772,429 C761.72,451.07 742.91,470.69 726,485.2 " fill="none" id="RTR-to-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="721.75,488.77,731.2098,486.0292,725.5734,485.548,726.0546,479.9116,721.75,488.77" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[013c2e1512e5687572f37d8915b1baa3]
+link MPR to SOL--><path d="M519.47,87.26 C543.6,110.14 580.26,144.9 599.39,163.04 " fill="none" id="MPR-to-SOL" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="603.41,166.86,599.6523,157.7562,599.7897,163.4114,594.1345,163.5487,603.41,166.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1819af0eb371de40e2a65ff90d82eee4]
+reverse link MTR to SOL--><path d="M715.64,90.56 C684.94,115.57 640.1,152.1 621.08,167.6 " fill="none" id="MTR-backto-SOL" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="719.68,87.26,710.1726,89.8309,715.7994,90.413,715.2173,96.0398,719.68,87.26" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[02f9f1480b62bd67cc6f0c2fd50551df]
+link SOL to MOD--><path d="M612,185.27 C612,200.85 612,235.18 612,259.65 " fill="none" id="SOL-to-MOD" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="612,264.71,616,255.71,612,259.71,608,255.71,612,264.71" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[075f3aaa60a88f98d677d56b8e4acaa3]
+link MOD to DS--><path d="M617.46,311.26 C622.94,333.56 631.18,367.16 635.72,385.64 " fill="none" id="MOD-to-DS" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="637,390.86,638.7246,381.1633,635.8008,386.0059,630.9581,383.0821,637,390.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e5ab9cd8e604ac68e5f4c472104814a3]
+link DS to IO--><path d="M642.91,409.27 C650.3,424.91 666.64,459.47 678.22,483.96 " fill="none" id="DS-to-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="680.46,488.71,680.2141,478.8642,678.3159,484.1931,672.987,482.2948,680.46,488.71" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4332a732c1f65f0aa41e370698569549]
+link MPR to IFN--><path d="M490.7,92.3 C484.64,123.61 474.46,176.48 466,222 C454.61,283.27 441.53,356.59 436.32,385.93 " fill="none" id="MPR-IFN" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="435.44,390.88,440.9459,382.7139,436.3106,385.9564,433.0681,381.321,435.44,390.88" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="491.71,87.09,486.0588,95.1562,490.7514,91.9973,493.9104,96.6899,491.71,87.09" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d01a4bdc6cdb7571f60930be1c4abe77]
+link IFN to IO--><path d="M447.96,406.97 C482.69,421.84 574.53,461.15 634.84,486.96 " fill="none" id="IFN-IO" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="639.49,488.95,632.8015,481.7206,634.8965,486.9752,629.6419,489.0702,639.49,488.95" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="443.15,404.91,449.8466,412.1319,447.7457,406.8796,452.998,404.7787,443.15,404.91" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d3fac09fe60e86ea303fdd7d3ae85a9d]
+@startuml 0
+
+package "Ядро" {
+    [Модуль ввода-вывода] as IO
+    [Модуль объяснения решения] as MOD
+    [Модуль принятия решения] as MPR
+    [Модуль трассировки] as MTR
+    interface "Результаты трассировк" as RTR
+    interface "Информация" as IFN
+    interface "Решение" as SOL
+    interface "Детализированное решение" as DS
+
+
+}
+package "Данные" {
+[База данных] as BD
+
+[Баа знаний] as BZ
+}
+
+
+interface "Данные" as Data
+interface "Знания" as ZN
+
+package "Интерфейсы" {
+    [Интерфейс конечного пользователя] as UI
+    [Интерфейс эксперта] as EI
+}
+
+interface "Знания и данныее" as ZID
+interface "Резулльтаты работы системы" as RRS
+
+interface "Запрос к экспертной системе" as ZES
+
+BD<- ->Data
+Data<- ->IO
+
+BZ<->ZN
+ZN<- ->IO
+
+IO -> RRS
+RRS - -> UI
+RRS - -> EI
+
+EI- ->ZID
+ZID- ->IO
+UI- ->ZES
+ZES- ->IO
+
+MTR->RTR
+RTR->IO
+
+MPR- ->SOL
+MTR<- -SOL
+SOL- ->MOD
+
+MOD- ->DS
+DS- ->IO
+
+' IO<->IFN
+MPR<- ->IFN
+IFN<- ->IO
+
+@enduml
+
+@startuml 0
+
+package "Ядро" {
+    [Модуль ввода-вывода] as IO
+    [Модуль объяснения решения] as MOD
+    [Модуль принятия решения] as MPR
+    [Модуль трассировки] as MTR
+    interface "Результаты трассировк" as RTR
+    interface "Информация" as IFN
+    interface "Решение" as SOL
+    interface "Детализированное решение" as DS
+
+
+}
+package "Данные" {
+[База данных] as BD
+
+[Баа знаний] as BZ
+}
+
+
+interface "Данные" as Data
+interface "Знания" as ZN
+
+package "Интерфейсы" {
+    [Интерфейс конечного пользователя] as UI
+    [Интерфейс эксперта] as EI
+}
+
+interface "Знания и данныее" as ZID
+interface "Резулльтаты работы системы" as RRS
+
+interface "Запрос к экспертной системе" as ZES
+
+BD<- ->Data
+Data<- ->IO
+
+BZ<->ZN
+ZN<- ->IO
+
+IO -> RRS
+RRS - -> UI
+RRS - -> EI
+
+EI- ->ZID
+ZID- ->IO
+UI- ->ZES
+ZES- ->IO
+
+MTR->RTR
+RTR->IO
+
+MPR- ->SOL
+MTR<- -SOL
+SOL- ->MOD
+
+MOD- ->DS
+DS- ->IO
+
+MPR<- ->IFN
+IFN<- ->IO
+
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 21:01:58 YEKT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

@@ -1,0 +1,64 @@
+@startuml 0
+
+package "Ядро" {
+    [Модуль ввода-вывода] as IO
+    [Модуль объяснения решения] as MOD
+    [Модуль принятия решения] as MPR
+    [Модуль трассировки] as MTR
+    interface "Результаты трассировк" as RTR
+    interface "Информация" as IFN
+    interface "Решение" as SOL
+    interface "Детализированное решение" as DS
+
+
+}
+package "Данные" {
+[База данных] as BD
+
+[Баа знаний] as BZ
+}
+
+
+interface "Данные" as Data
+interface "Знания" as ZN
+
+package "Интерфейсы" {
+    [Интерфейс конечного пользователя] as UI
+    [Интерфейс эксперта] as EI
+}
+
+interface "Знания и данныее" as ZID
+interface "Резулльтаты работы системы" as RRS
+
+interface "Запрос к экспертной системе" as ZES
+
+BD<-->Data
+Data<-->IO
+
+BZ<->ZN
+ZN<-->IO
+
+IO -> RRS
+RRS --> UI
+RRS --> EI
+
+EI-->ZID
+ZID-->IO
+UI-->ZES
+ZES-->IO
+
+MTR->RTR
+RTR->IO
+
+MPR-->SOL
+MTR<--SOL
+SOL-->MOD
+
+MOD-->DS
+DS-->IO
+
+' IO<->IFN
+MPR<-->IFN
+IFN<-->IO
+
+@enduml
