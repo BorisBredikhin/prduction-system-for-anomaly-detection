@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "antecedent": [["t", ">", 36.6]],
+      "consequent": ["result", "температура повыена"],
+      "recommendation": "Снизить температуру"
+    },
+    {
+      "antecedent": [
+        ["t", "<", 35.5],
+        ["P_low", "<", 120]
+      ],
+      "consequent": ["state", "t*P_low"],
+      "recommendation": "Низкие температура и давление"
+    }
+  ]
+}
