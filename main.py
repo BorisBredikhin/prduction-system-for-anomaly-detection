@@ -1,3 +1,11 @@
-import math
+import json
 
-print(math.sqrt(2))
+from rules import KnowledgeBase
+
+# todo: rewrite as fnction
+f=open('./example_data/rules.json', 'r')
+knowledges: KnowledgeBase = json.load(f)
+f.close()
+
+print(knowledges)
+
