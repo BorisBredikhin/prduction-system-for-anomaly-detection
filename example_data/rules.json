@@ -13,5 +13,12 @@
       "consequent": ["state", "t*P_low"],
       "recommendation": "Низкие температура и давление"
     }
+  ],
+  "input_variables": [
+    {
+      "name": "t",
+      "type": "float",
+      "description": "Текущая температура тела человека"
+    }
   ]
 }
