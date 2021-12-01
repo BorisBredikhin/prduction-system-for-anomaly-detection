@@ -2,7 +2,7 @@
   "rules": [
     {
       "antecedent": [["t", ">", 36.6]],
-      "consequent": ["result", "температура повыена"],
+      "consequent": ["result", "температура повыiена"],
       "recommendation": "Снизить температуру"
     },
     {
@@ -19,6 +19,11 @@
       "name": "t",
       "type": "float",
       "description": "Текущая температура тела человека"
+    },
+    {
+      "name": "P_low",
+      "type": "int",
+      "description": "Нижне давление"
     }
   ]
 }
