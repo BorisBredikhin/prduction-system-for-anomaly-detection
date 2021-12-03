@@ -2,8 +2,10 @@ from collections import deque
 
 from common import Message
 from data import database
+from decsion_maker import DecisionMaker
 from io_module import IOModule, CLIIOMddule
 from rules import KnowledgeBase, load_kowledge_base, VariableType
+from user_interfaces import CLIUserInterface
 
 
 class Core:
@@ -11,13 +13,17 @@ class Core:
     kb: KnowledgeBase
     io_mod: IOModule
     mq: deque[Message]
+    user_interface: CLIUserInterface
+    decsion_maker: DecisionMaker
 
     def __init__(self, path_to_knowedge_base: str):
         self.db = database.value
         self.kb = load_kowledge_base(path_to_knowedge_base)
         self.io_mod = CLIIOMddule()
         self.mq = deque()
-        self.mq.append(Message(to='io', cmd='LOAD_INITIAL_DATA', params={'input_variables': self.kb['input_variables']}))
+        self.user_interface = CLIUserInterface(self.io_mod)
+        self.mq.append(Message(to='ui', cmd='LOAD_INITIAL_DATA', params={'input_variables': self.kb['input_variables']}))
+        self.decsion_maker = DecisionMaker()
 
     def loop(self):
         while len(self.mq)>0:
@@ -30,6 +36,8 @@ class Core:
                 if msg['cmd'] == 'INITIAL_DATA_LOADED':
                     # todo: начать логический вывод
                     pass
+            elif msg['to'] == 'ui':
+                self.user_interface.send(msg, self.mq)
             else:
                 raise Exception('Wrong message', msg)
 

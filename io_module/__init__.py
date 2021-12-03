@@ -2,29 +2,41 @@ import abc
 from collections import deque
 from typing import Optional
 
-from common import Message
+from common import Message, ReceiverMixin
 from rules import VariableInputType, VariableType
 
 
 #todo: разделить с интерфейсом пользователя
 
-class IOModule(abc.ABC):
+class IOModule(ReceiverMixin, abc.ABC):
     @abc.abstractmethod
     def read_variable(self, name: str, var_type: VariableInputType) -> Optional[VariableType]:
         pass
 
     def send(self, msg: Message, mq: deque[Message]):
+        '''
+        cmd = LOAD_INITIAL_DATA; params: input_variables
+        '''
         if msg['cmd'] == 'LOAD_INITIAL_DATA':
             for i in msg['params']['input_variables']:
-                mq.append({
-                    'to': 'db',
-                    'cmd': 'UPDATE',
-                    'params': {
+                self.send(Message(
+                    to='io',
+                    cmd='READ',
+                    params={
                         'name': i['name'],
-                        'value': self.read_variable(i['name'], i['type'])
+                        'type': i['type']
                     }
-                })
-            mq.append(Message(to='cpre', cmd='INITIAL_DATA_LOADED', params=None))
+                ), mq)
+            mq.append(Message(to='core', cmd='INITIAL_DATA_LOADED', params=None))
+        elif msg['cmd'] == 'READ':
+            mq.append({
+                'to': 'db',
+                'cmd': 'UPDATE',
+                'params': {
+                    'name': msg['params']['name'],
+                    'value': self.read_variable(msg['params']['name'], msg['params']['type'])
+                }
+            })
 
 
 class CLIIOMddule(IOModule):
