@@ -23,7 +23,7 @@ class Core:
         self.mq = deque()
         self.user_interface = CLIUserInterface(self.io_mod)
         self.mq.append(Message(to='ui', cmd='LOAD_INITIAL_DATA', params={'input_variables': self.kb['input_variables']}))
-        self.decsion_maker = DecisionMaker()
+        self.decsion_maker = DecisionMaker(self.user_interface, self.db, self.kb, self.mq, self.io_mod)
 
     def loop(self):
         while len(self.mq)>0:
