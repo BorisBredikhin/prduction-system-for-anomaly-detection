@@ -14,10 +14,7 @@ class KnowledgeBase(TypedDict):
     input_variables: list['InputVariable']
 
 
-class ElementaryAntecedent(TypedDict):
-    variable_name: str
-    op: str
-    expr: VariableType
+ElementaryAntecedent = list
 
 
 class Rule(TypedDict):

@@ -1,27 +1,30 @@
 {
   "rules": [
     {
-      "antecedent": [["t", ">", 36.6]],
-      "consequent": ["result", "температура повыiена"],
+      "antecedent": [["$t", ">", 36.6]],
+      "consequent": ["result", "температура повышена"],
       "recommendation": "Снизить температуру"
     },
     {
       "antecedent": [
-        ["t", "<", 35.5],
-        ["P_low", "<", 120]
+        ["$t", "<", 35.5],
+        ["$P_low", "<", 120]
       ],
-      "consequent": ["state", "t*P_low"],
+      "consequent": ["$state", ["*", "$t", "$P_low"]],
       "recommendation": "Низкие температура и давление"
+    },
+    {
+      "antecedent": []
     }
   ],
   "input_variables": [
     {
-      "name": "t",
+      "name": "$t",
       "type": "float",
       "description": "Текущая температура тела человека"
     },
     {
-      "name": "P_low",
+      "name": "$P_low",
       "type": "int",
       "description": "Нижне давление"
     }

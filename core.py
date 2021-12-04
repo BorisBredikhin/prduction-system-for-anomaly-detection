@@ -34,8 +34,12 @@ class Core:
                 self.process_db_message(msg)
             elif msg['to'] == 'core':
                 if msg['cmd'] == 'INITIAL_DATA_LOADED':
-                    # todo: начать логический вывод
-                    pass
+                    self.mq.append(Message(
+                        to='decision_maker',
+                        cmd='BEGIN_INFERENCE'
+                    ))
+            elif msg['to'] == "decision_maker":
+                self.decsion_maker.send(msg, self.mq)
             elif msg['to'] == 'ui':
                 self.user_interface.send(msg, self.mq)
             else:
