@@ -1,13 +1,22 @@
 import abc
 import typing
 from collections import deque
+import enum
 
-Command = typing.Literal[
-    'LOAD_INITIAL_DATA',
-    'INITIAL_DATA_LOADED',
-    'READ',
-    'UPDATE',
-]
+@enum.unique
+class Command(enum.Enum):
+    BEGIN_INFERENCE = enum.auto()
+    CHOOSE_INTERFACE = enum.auto()
+    LOAD_INITIAL_DATA = enum.auto()
+    INITIAL_DATA_LOADED = enum.auto()
+    READ = enum.auto()
+    UPDATE = enum.auto()
+
+
+@enum.unique
+class InterfaceType(enum.Enum):
+    EXPERT = enum.auto()
+    USER = enum.auto()
 
 
 class Message(typing.TypedDict):
