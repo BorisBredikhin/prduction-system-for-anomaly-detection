@@ -1,6 +1,6 @@
-from collections import deque
+from queue import PriorityQueue
 
-from common import ReceiverMixin, Message
+from common import ReceiverMixin, Message, Command
 from io_module import IOModule
 
 
@@ -10,7 +10,7 @@ class CLIUserInterface(ReceiverMixin):
     def __init__(self, iom):
         self.iom = iom
 
-    def send(self, msg: Message, mq: deque[Message]):
+    def send(self, msg: Message, mq: PriorityQueue[Message]):
         """
         msg:
         {
@@ -22,6 +22,6 @@ class CLIUserInterface(ReceiverMixin):
         }
         cmd='LOAD_INITIAL_DATA', params={'input_variables': self.kb['input_variables'
         """
-        if msg['cmd'] == 'LOAD_INITIAL_DATA':
+        if msg.cmd == Command.LOAD_INITIAL_DATA:
             self.iom.send(msg, mq)
 

@@ -1,5 +1,5 @@
 import abc
-from collections import deque
+from queue import PriorityQueue
 from typing import Optional
 
 from common import Message, ReceiverMixin, Command
@@ -14,34 +14,34 @@ class IOModule(ReceiverMixin, abc.ABC):
         pass
 
     @abc.abstractmethod
-    def choose_interface(self9, mq: deque[Message]):
+    def choose_interface(self, mq: PriorityQueue[Message]):
         pass
 
-    def send(self, msg: Message, mq: deque[Message]):
+    def send(self, msg: Message, mq: PriorityQueue[Message]):
         '''
         cmd = LOAD_INITIAL_DATA; params: input_variables
         '''
-        if msg['cmd'] == Command.LOAD_INITIAL_DATA:
-            for i in msg['params']['input_variables']:
+        if msg.cmd == Command.LOAD_INITIAL_DATA:
+            for i in msg.params['input_variables']:
                 self.send(Message(
                     to='io',
                     cmd=Command.READ,
                     params={
                         'name': i['name'],
                         'type': i['type']
-                    }
+                    },
+                    priority=1
                 ), mq)
-            mq.append(Message(to='core', cmd=Command.INITIAL_DATA_LOADED, params=None))
-        elif msg['cmd'] == Command.READ:
-            mq.append({
-                'to': 'db',
-                'cmd': Command.UPDATE,
-                'params': {
-                    'name': msg['params']['name'],
-                    'value': self.read_variable(msg['params']['name'], msg['params']['type'])
+            mq.put(Message(to='core', cmd=Command.INITIAL_DATA_LOADED, params=None, priority=5))
+        elif msg.cmd == Command.READ:
+            mq.put(Message(
+                priority=5, to='db', cmd=Command.UPDATE,
+                params={
+                    'name': msg.params['name'],
+                    'value': self.read_variable(msg.params['name'], msg.params['type'])
                 }
-            })
-        elif msg['cmd'] == Command.CHOOSE_INTERFACE:
+            ))
+        elif msg.cmd == Command.CHOOSE_INTERFACE:
             self.choose_interface(mq)
 
 
@@ -62,6 +62,6 @@ class CLIIOMddule(IOModule):
             return value
         raise TypeError(f"Недопустимое значение {var_type=}.")
 
-    def choose_interface(self9, mq: deque[Message]):
+    def choose_interface(self, mq: PriorityQueue[Message]):
         # todo
         pass

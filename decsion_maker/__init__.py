@@ -1,6 +1,7 @@
-from collections import deque
+import typing
+from queue import PriorityQueue
 
-from common import ReceiverMixin, Message
+from common import ReceiverMixin, Message, Command
 from io_module import IOModule
 from rules import VariableType, KnowledgeBase, ElementaryAntecedent
 from user_interfaces import CLIUserInterface
@@ -10,19 +11,19 @@ class DecisionMaker(ReceiverMixin):
     db: dict[str, VariableType]
     io_mod: IOModule
     kb: KnowledgeBase
-    mq: deque[Message]
+    mq: PriorityQueue[Message]
     ui: CLIUserInterface
 
     def __init__(self, ui: CLIUserInterface, db: dict[str, VariableType],
-                 kb: KnowledgeBase, mq: deque[Message], io_mod: IOModule):
+                 kb: KnowledgeBase, mq: PriorityQueue[Message], io_mod: IOModule):
         self.io_mod = io_mod
         self.mq = mq
         self.kb = kb
         self.db = db
         self.ui = ui
 
-    def send(self, msg: Message, mq: deque[Message]):
-        if msg['cmd'] == 'BEGIN_INFERENCE':
+    def send(self, msg: Message, mq: PriorityQueue[Message]) -> typing.NoReturn:
+        if msg.cmd == Command.BEGIN_INFERENCE:
             self.begin_inference()
 
     def begin_inference(self):

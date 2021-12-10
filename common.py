@@ -2,6 +2,8 @@ import abc
 import typing
 from collections import deque
 import enum
+from dataclasses import dataclass, field
+
 
 @enum.unique
 class Command(enum.Enum):
@@ -19,10 +21,12 @@ class InterfaceType(enum.Enum):
     USER = enum.auto()
 
 
-class Message(typing.TypedDict):
-    to: str
-    cmd: Command
-    params: typing.Optional[dict]
+@dataclass(order=True)
+class Message:
+    priority: int
+    to: str = field(compare=False)
+    cmd: Command = field(compare=False)
+    params: typing.Optional[dict] = field(compare=False)
 
 class ReceiverMixin(abc.ABC):
     @abc.abstractmethod
