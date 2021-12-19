@@ -1,0 +1,12 @@
+digraph {
+    anyio -> idna
+    anyio -> sniffio
+    click -> colrama
+    fastapi->pydantic
+    fastapi->starlette
+    pydantic -> "typing-extensions"
+    starlette->anyio
+    uvicorn->asgiref
+    uvicorn->click
+    uvicorn->h11y
+}

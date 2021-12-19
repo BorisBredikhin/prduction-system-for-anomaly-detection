@@ -6,3 +6,4 @@
 *.png
 *.fdb_latexmk
 *.fls
+/__pypackages__/
