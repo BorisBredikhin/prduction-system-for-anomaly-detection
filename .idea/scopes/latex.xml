@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="latex" pattern="file[prduction-system-for-anomaly-detection]:documentation//*" />
+</component>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" filepath="$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_client/web_client.iml" filepath="$PROJECT_DIR$/web_client/web_client.iml" />
     </modules>
   </component>
 </project>

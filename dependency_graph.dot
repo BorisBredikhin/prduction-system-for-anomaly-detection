@@ -9,4 +9,5 @@ digraph {
     uvicorn->asgiref
     uvicorn->click
     uvicorn->h11y
+    fastapi->websockets
 }
