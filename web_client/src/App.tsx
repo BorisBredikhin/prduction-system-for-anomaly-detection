@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './App.css';
 import {AppBar, Box, Toolbar, Typography} from "@mui/material";
 import Search from "./components/search/search";
-import SearchIconWrapper from "./components/search/search-icon-wrapper";
-import SearchIcon from '@mui/icons-material/Search'
-import {StyledInputBase} from "./compnens/styled-input-base";
+import {Client} from "./client";
 
+const client = new Client()
 
 function App() {
+    useEffect(() => client.ws.onopen = function () {
+        client.ws.send(JSON.stringify({
+            action: "connected",
+            client_id: client.client_id
+        }))
+    })
     return (
         <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
@@ -17,7 +22,7 @@ function App() {
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <Search onClick={console.log}/>
+            <Search onClick={client.sendQuery(document.querySelector('#root > div > div > div > input')!)}/>
         </Box>
     );
 }

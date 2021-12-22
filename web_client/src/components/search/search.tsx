@@ -1,7 +1,5 @@
-import {alpha, Input, InputAdornment, styled} from "@mui/material";
-import SearchIconWrapper from "./search-icon-wrapper";
-import SearchIcon from "@mui/icons-material/Search";
-import {StyledInputBase} from "../../compnens/styled-input-base";
+import {alpha, Button, Input, InputAdornment, styled} from "@mui/material";
+import SearchIcon from "@mui/icons-material/Send";
 import React, {MouseEventHandler} from "react";
 
 const SearchStyleDiv = styled('div')(({theme}) => ({
@@ -21,16 +19,22 @@ const SearchStyleDiv = styled('div')(({theme}) => ({
 
 
 export interface SearchProps {
-    onClick: MouseEventHandler;
+    onClick: MouseEventHandler
 }
 
 const Search = (props: SearchProps) => <SearchStyleDiv>
     <Input
         id="userInput"
+        onKeyDown={function (event) {
+            if (event.key == 'Enter')
+                props.onClick(undefined!)
+        }}
         placeholder="Введите запрос"
         endAdornment={
             <InputAdornment position="end">
-                <SearchIcon onClick={props.onClick}/>
+                <Button onClick={props.onClick}>
+                    <SearchIcon/>
+                </Button>
             </InputAdornment>
         }
     />
