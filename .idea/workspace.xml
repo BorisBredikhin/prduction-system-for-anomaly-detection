@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6517271-88d8-4132-90d4-7da2516e173c" name="Changes" comment="web client">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pdm.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.pdm.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdm.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pdm.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_fastapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_fastapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/src/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/client/index.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="cat /opt/youtrack/conf/internal/services/configurationWizard/wizard_token.txt" />
+    </ExecCommand>
+  </component>
+  <component name="FileColors">
+    <fileColor scope="__init__.py" color="014fbc" />
+    <fileColor scope="latex" color="40f241" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="latex" />
+      <scope name="__init__.py" />
+    </order>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="21VA5BXHCMEYeLLL7WWdfqqffm1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web_client/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/web_client/src/compnens/styled-input-base/index.tsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web_client/src/components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run_fastapi" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="prduction-system-for-anomaly-detection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PATH" value="$PROJECT_DIR$/__pypackages__/3.9/bin" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.pyenv/versions/3.9.7/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_fastapi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6517271-88d8-4132-90d4-7da2516e173c" name="Changes" comment="" />
+      <created>1638015708206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638015708206</updated>
+      <workItem from="1638015718646" duration="1361000" />
+      <workItem from="1638092303228" duration="7195000" />
+      <workItem from="1638249544406" duration="4499000" />
+      <workItem from="1638355872161" duration="363000" />
+      <workItem from="1638356639670" duration="4651000" />
+      <workItem from="1638516823340" duration="5514000" />
+      <workItem from="1638618466082" duration="5422000" />
+      <workItem from="1638854816995" duration="585000" />
+      <workItem from="1639118479436" duration="6873000" />
+      <workItem from="1639489261402" duration="618000" />
+      <workItem from="1639745444896" duration="42000" />
+      <workItem from="1639894992881" duration="6814000" />
+      <workItem from="1640089937218" duration="6784000" />
+      <workItem from="1640161490053" duration="19511000" />
+      <workItem from="1640238943045" duration="25000" />
+    </task>
+    <task id="LOCAL-00001" summary="пример базы правил">
+      <created>1638017027007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638017027007</updated>
+    </task>
+    <task id="LOCAL-00002" summary="пример базы правил, баа данных, загтовка ядра системы,">
+      <created>1638101429341</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638101429341</updated>
+    </task>
+    <task id="LOCAL-00003" summary="IO">
+      <created>1638254077906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638254077906</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MQ">
+      <created>1638361000213</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638361000213</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Выделен интерфейс">
+      <created>1638520524301</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638520524301</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Выделен интерфейс">
+      <created>1638523195222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638523195222</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Первая рабочая версия">
+      <created>1638622829782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638622829782</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Выбор интерфейса">
+      <created>1639124134264</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1639124134264</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Переход на очередь с  приоритетом">
+      <created>1639136496483</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1639136496483</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pdm">
+      <created>1639901637678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639901637678</updated>
+    </task>
+    <task id="LOCAL-00011" summary="web client">
+      <created>1640096789760</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640096789760</updated>
+    </task>
+    <task id="LOCAL-00012" summary="web client">
+      <created>1640166747946</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640166747946</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="пример базы правил" />
+    <MESSAGE value="пример базы правил, баа данных, загтовка ядра системы," />
+    <MESSAGE value="IO" />
+    <MESSAGE value="MQ" />
+    <MESSAGE value="Выделен интерфейс" />
+    <MESSAGE value="Первая рабочая версия" />
+    <MESSAGE value="Выбор интерфейса" />
+    <MESSAGE value="Переход на очередь с  приоритетом" />
+    <MESSAGE value="pdm" />
+    <MESSAGE value="web client" />
+    <option name="LAST_COMMIT_MESSAGE" value="web client" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="mq" />
+        <watch expression="mq" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

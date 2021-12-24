@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 function generate() {
     return 541
 }
@@ -5,10 +7,16 @@ function generate() {
 export class Client {
     public readonly client_id: number
     ws: WebSocket;
-
+    messages?: HTMLDivElement
+ 
+    receivedMessage(ev: MessageEvent<any>) {
+        this.messages!.innerHTML+=`<p>${ev.data}</p>`
+    }
+    
     constructor() {
         this.client_id = generate()
         this.ws = new WebSocket(`ws://localhost:8000/ws/${this.client_id}`)
+        this.ws.onmessage = (ev) => this.receivedMessage(ev)
     }
 
     async connect() {
@@ -18,12 +26,14 @@ export class Client {
         }))
     }
 
-    sendQuery(searchQuery: HTMLInputElement) {
+    sendQuery(searchQueryId: string, messagesId: string) {
         const this1 = this
         return function () {
-            let searchQuery = document.getElementById("userInput")! as HTMLInputElement
+           let searchQuery = document.getElementById(searchQueryId)! as HTMLInputElement
+           this1.messages = this1.messages ?? document.getElementById(messagesId) as HTMLDivElement
 
             const query = searchQuery.value
+            console.log(query)
             this1.ws.send(JSON.stringify({
                 action: "query",
                 client_id: this1.client_id,

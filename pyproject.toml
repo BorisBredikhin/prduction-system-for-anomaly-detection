@@ -6,11 +6,11 @@ authors = [
     {name = "Boris Bredikhin", email = "boris00043@yandex.ru"},
 ]
 dependencies = [
-    "uvicorn",
+    "uvicorn>=0.16.0",
     "fastapi",
     "websockets",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = {text = "Apache-2.0"}
 
 [project.urls]

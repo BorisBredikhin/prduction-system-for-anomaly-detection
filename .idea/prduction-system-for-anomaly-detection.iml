@@ -8,10 +8,12 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/__pypackages__/3.10/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/__pypackages__/3.9/lib" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/__pypackages__" />
     </content>
     <content url="file://$MODULE_DIR$/__pypackages__/3.10/lib" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Python 3.10 interpreter library" level="application" />
   </component>

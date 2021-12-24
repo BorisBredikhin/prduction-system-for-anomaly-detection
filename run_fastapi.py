@@ -72,16 +72,24 @@ async def get():
     return HTMLResponse(html)
 
 
+async def start_user_interface(websocket: WebSocket):
+    pass
+
+
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint(websocket: WebSocket, client_id: int):
     await manager.connect(websocket)
     try:
-        while True:
-            data = await websocket.receive_text()
-            await manager.send_personal_message(f"Accepted: {data}", websocket)
-            print(data)
-            # await manager.broadcast(f"Client #{client_id} says: {data}")
+        data = await websocket.receive_text()
+        await manager.send_personal_message(f"Accepted", websocket)
+        await websocket.receive_text()
+        await manager.send_personal_message(f"Выберите вашу роль(0 - конечный польователь, 1 - эксперт):", websocket)
 
+        role = await websocket.receive_json()
+        if role['query'] != '0':
+            await manager.send_personal_message('Не реализовано', websocket)
+        await start_user_interface(websocket)
+        pass
     except WebSocketDisconnect:
 
         manager.disconnect(websocket)
