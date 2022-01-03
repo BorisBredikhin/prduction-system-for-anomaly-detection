@@ -1,8 +1,8 @@
-from typing import List
-
 import uvicorn
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
+from utils import ConnectionManager
+from ws_interfaces import end_user_interface
 
 app = FastAPI()
 
@@ -44,27 +44,7 @@ html = """
 
 """
 
-
-class ConnectionManager:
-    def __init__(self):
-        self.active_connections: List[WebSocket] = []
-
-    async def connect(self, websocket: WebSocket):
-        await websocket.accept()
-        self.active_connections.append(websocket)
-
-    def disconnect(self, websocket: WebSocket):
-        self.active_connections.remove(websocket)
-
-    async def send_personal_message(self, message: str, websocket: WebSocket):
-        await websocket.send_text(message)
-
-    async def broadcast(self, message: str):
-        for connection in self.active_connections:
-            await connection.send_text(message)
-
-
-manager = ConnectionManager()
+manager: ConnectionManager = ConnectionManager()
 
 
 @app.get("/")
@@ -83,12 +63,17 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
         data = await websocket.receive_text()
         await manager.send_personal_message(f"Accepted", websocket)
         await websocket.receive_text()
-        await manager.send_personal_message(f"Выберите вашу роль(0 - конечный польователь, 1 - эксперт):", websocket)
-
-        role = await websocket.receive_json()
-        if role['query'] != '0':
-            await manager.send_personal_message('Не реализовано', websocket)
-        await start_user_interface(websocket)
+        # await manager.send_personal_message(f"Выберите вашу роль(0 - конечный польователь, 1 - эксперт):", websocket)
+        #
+        # role = await websocket.receive_json()
+        # if role['query'] == '0':
+            # end user
+        await end_user_interface(manager, websocket)
+            # await manager.send_personal_message('Не реализовано', websocket)
+        # elif role['query'] == '1':
+        #     # expert
+        #     await manager.send_personal_message('Не реализовано', websocket)
+        # await start_user_interface(websocket)
         pass
     except WebSocketDisconnect:
 

@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6517271-88d8-4132-90d4-7da2516e173c" name="Changes" comment="web client">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prduction-system-for-anomaly-detection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pdm.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.pdm.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdm.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pdm.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ws_interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decsion_maker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/decsion_maker/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/io_module/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_fastapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_fastapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_client/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_interfaces/user_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interfaces/user_interface.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_client/src/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/client/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/src/components/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/components/search/search.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -63,6 +64,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="21VA5BXHCMEYeLLL7WWdfqqffm1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_olap" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -95,7 +97,28 @@
       <recent name="$PROJECT_DIR$/web_client/src/components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.run_fastapi">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab_olap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../lab_olap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../lab_olap/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_fastapi" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="prduction-system-for-anomaly-detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +141,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -227,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640166747946</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="web client">
+      <created>1640352688050</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640352688050</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,12 +293,40 @@
     <option name="LAST_COMMIT_MESSAGE" value="web client" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="mq" />
-        <watch expression="mq" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/io_module/__init__.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,10 +4,15 @@ from queue import PriorityQueue
 from common import ReceiverMixin, Message, Command
 from io_module import IOModule
 from rules import VariableType, KnowledgeBase, ElementaryAntecedent
+from starlette.websockets import WebSocket
 from user_interfaces import CLIUserInterface
+from utils import ConnectionManager
 
 
 class DecisionMaker(ReceiverMixin):
+    async def send_async(self, msg, mq, manage: ConnectionManager, websocket: WebSocket, send_msg, receive):
+        pass
+
     db: dict[str, VariableType]
     io_mod: IOModule
     kb: KnowledgeBase

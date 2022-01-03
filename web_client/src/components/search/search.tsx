@@ -25,6 +25,7 @@ export interface SearchProps {
 const Search = (props: SearchProps) => <SearchStyleDiv>
     <Input
         id="userInput"
+        autoFocus
         onKeyDown={function (event) {
             if (event.key == 'Enter')
                 props.onClick(undefined!)

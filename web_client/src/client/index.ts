@@ -39,6 +39,7 @@ export class Client {
                 client_id: this1.client_id,
                 query: query
             }))
+            searchQuery.value = ""
         }
     }
 }
