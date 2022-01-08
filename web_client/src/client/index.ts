@@ -1,22 +1,33 @@
 import { Dispatch, SetStateAction } from "react";
 
-function generate() {
-    return 541
+function generate(): number {
+    return Math.floor(Math.random() * 100)
+}
+
+export type Message ={
+    form: "user" | "ai"
+    text: string
 }
 
 export class Client {
     public readonly client_id: number
     ws: WebSocket;
-    messages?: HTMLDivElement
+    setMessages: Dispatch<SetStateAction<Message[]>>;
+    messages: Message[];
  
-    receivedMessage(ev: MessageEvent<any>) {
-        this.messages!.innerHTML+=`<p>${ev.data}</p>`
+    receivedMessage(msg: string, fromUser: boolean) {
+        this.messages.push({form: fromUser? 'user':'ai', text: msg})
+        var msgs = document.getElementById('msgs')!
+        msgs.innerHTML = this.messages.map(m=>`<div class="message ${m.form}"><p>${m.text}</p></div>`).join('')
+        msgs.scrollTop = msgs.scrollHeight - msgs.clientHeight
     }
     
-    constructor() {
+    constructor(messages: Message[], setMessages: Dispatch<SetStateAction<Message[]>>) {
         this.client_id = generate()
         this.ws = new WebSocket(`ws://localhost:8000/ws/${this.client_id}`)
-        this.ws.onmessage = (ev) => this.receivedMessage(ev)
+        this.ws.onmessage = (ev) => this.receivedMessage(ev.data, false)
+        this.messages = messages
+        this.setMessages = setMessages
     }
 
     async connect() {
@@ -33,7 +44,7 @@ export class Client {
            this1.messages = this1.messages ?? document.getElementById(messagesId) as HTMLDivElement
 
             const query = searchQuery.value
-            console.log(query)
+            this1.receivedMessage(query, true)
             this1.ws.send(JSON.stringify({
                 action: "query",
                 client_id: this1.client_id,

@@ -62,7 +62,7 @@ class Core:
         while self.mq.qsize() > 0:
             msg = self.mq.get()
             if msg.to == 'io':
-                await self.io_mod.send(msg, self.mq, manage, websocket, send_msg, receive)
+                await self.io_mod.send_async(msg, self.mq, manage, websocket, send_msg, receive)
             elif msg.to == 'db':
                 self.process_db_message(msg)
             elif msg.to == 'core':
@@ -83,7 +83,7 @@ class Core:
                 elif msg.cmd == Command.LOAD_INITIAL_DATA:
                     await self.io_mod.send_async(msg, self.mq, manage, websocket, send_msg, receive)
             elif msg.to == "decision_maker":
-                self.decsion_maker.send(msg, self.mq)
+                await self.decsion_maker.send_async(msg, self.mq, manage, websocket, send_msg, receive)
             elif msg.to == 'ui':
                 await self.user_interface.send_async(msg, self.mq, manage, websocket, send_msg, receive)
             else:

@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+#msgs {
+  width: 100%;
+  overflow: auto;
+  height: 80vh;
+}
+
+#msgs p{
+  width: fit-content;
+  max-width: 70vw;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.ai{
+  margin-left: 10px;
+  text-align: left;
+}
+
+.ai p {
+  background-color: #88f;
+}
+
+.user {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.user p{ 
+  background-color: #8f8;
+}
+
+#root > div > div {
+  position: fixed;
+  bottom: 10px;
+  left: 40px;
+}

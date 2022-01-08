@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6517271-88d8-4132-90d4-7da2516e173c" name="Changes" comment="web client">
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ws_interfaces.py" afterDir="false" />
+    <list default="true" id="e6517271-88d8-4132-90d4-7da2516e173c" name="Changes" comment="web client load data">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decsion_maker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/decsion_maker/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/io_module/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_fastapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_fastapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_interfaces/user_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interfaces/user_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_data/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/example_data/rules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_interfaces/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interfaces/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_client/src/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/client/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_client/src/components/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web_client/src/components/search/search.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640352688050</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="web client load data">
+      <created>1641206300805</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641206300805</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,43 +296,8 @@
     <MESSAGE value="Переход на очередь с  приоритетом" />
     <MESSAGE value="pdm" />
     <MESSAGE value="web client" />
-    <option name="LAST_COMMIT_MESSAGE" value="web client" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/io_module/__init__.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="web client load data" />
+    <option name="LAST_COMMIT_MESSAGE" value="web client load data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

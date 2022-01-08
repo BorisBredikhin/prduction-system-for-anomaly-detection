@@ -1,1 +1,1 @@
-from .user_interface import CLIUserInterface
+from .user_interface import CLIUserInterface, WSUserInterface
